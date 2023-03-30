@@ -1,0 +1,16 @@
+PROC_ActualizarUsuario	
+UPDATE usuarios
+SET nombre = nombre, apellido = apellido, telefono = telefono,email = email,clave = clave
+WHERE usuario = x
+
+PROC_RellenadoTabla
+SELECT usuario,nombre,apellido,telefono,email from usuarios
+
+PROC_consultausuario
+SELECT usuario,clave from usuarios
+
+PROC_eliminando
+DELETE from usuarios WHERE usuario = x
+
+PROC_insertarusuario
+INSERT INTO `usuarios` (`id`, `usuario`, `nombre`, `apellido`, `telefono`, `email`, `clave`) VALUES (NULL, usuario, nombre, apellido, telefono, email, clave)
